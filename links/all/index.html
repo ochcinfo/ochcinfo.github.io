@@ -1,75 +1,24 @@
 <!doctype html>
 <html lang=ja>
   <head>
-    <meta charset=utf-8>
-    <meta name="description" content="Gnit,OSC,OChCなど理科系のオンラインコンテストのリンクまとめサイトです。"/>
-    <meta title="理科系オンラインコンテストまとめ - OChC">
-    <style>
-      .table1_tdelement{
-        padding-right:3rem;
-        padding-left:1rem;
-      }
-      .hashtag_autospace{
-        padding-right:1rem;
-      }
-      a{
-        color:#000000;
-        text-decoration:underline;
-      }
-      a:hover{
-        cursor:pointer;
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="description" content="Online Chemistry Contestは、Online X Contestで開催予定の競技科学コンテスト。"/>
+    <meta title="Online Chemistry Contest - 競技化学">
   </head>
   <body>
-    <p>このサイトは、"PC版"です。スマホ版は<a href="phone.html">こちら(開発中です)</a>を御覧ください。</p>
-    <p>サイトは開発中です。</p>
-    <p>敬称略・アルファベット順</p>
-    <table id="table">
-      <thead id="table_thead">
-        <tr>
-          <th class="table1_tdelement"><span>サービス名</span></th>
-          <th class="table1_tdelement"><span>運営/代表者X</span></th>
-          <th class="table1_tdelement"><span>サイトURL</span></th>
-          <th class="table1_tdelement"><a href="https://x.com" target="_blank" rel="noopener">ハッシュタグ</a></th>
-        </tr>
-      </thead>
-      <tbody id=table_tbody>
-        <tr id="tr_gnit">
-          <td class="table1_tdelement"><span>Gnit</span></td>
-          <td class="table1_tdelement"><a href="https://x.com/gnit_me" target="_blank" rel="noopener">Gnit（ニット）- 東大生の物理学習</a></td>
-          <td class="table1_tdelement"><a href="https://gnit.me" target="_blank" rel="noopener">Gnit</a></td>
-          <td class="table1_tdelement">
-            <a href="https://x.com/search?q=%23Gnit" class="hashtag_autospace" target="_blank" rel="noopener">#Gnit</a>
-          </td>
-        </tr>
-        <tr id="tr_ochc">
-          <td class="table1_tdelement"><span>Online Chemistry Contest</span></td>
-          <td class="table1_tdelement"><a href="https://x.com/seed_script" target="_blank" rel="noopener">seed/プログラミング</a></td>
-          <td class="table1_tdelement"><a href="https://ochcinfo.github.io" target="_blank" rel="noopener">OnlineChemistryContest</a></td>
-          <td class="table1_tdelement">
-            <a href="https://x.com/search?q=%23OChC" class="hashtag_autospace" target="_blank" rel="noopener">#OChC</a>
-          </td>
-        </tr>
-        <tr id="tr_osc">
-          <td class="table1_tdelement"><span>Online Science Contest</span></td>
-          <td class="table1_tdelement"><a href="https://x.com/NeoInstagramer" target="_blank" rel="noopener">OSC代表NeoInstagramer</a></td>
-          <td class="table1_tdelement"><a href="https://iswao-onlinexcontest.com" target="_blank" rel="noopener">OnlineXContest</a></td>
-          <td class="table1_tdelement">
-            <a href="https://x.com/search?q=%23OSC" class="hashtag_autospace" target="_blank" rel="noopener">#OSC</a>
-            <a href="https://x.com/search?q=%23お寿司" class="hashtag_autospace" target="_blank" rel="noopener">#お寿司</a>
-          </td>
-        </tr>
-        <tr id="tr_scc">
-          <td class="table1_tdelement"><span>Science Contest Calendar(OSC,Gnit)</span></td>
-          <td class="table1_tdelement"><a href="https://x.com/sci_calendar" target="_blank" rel="noopener">Science Contest Calendar</a></td>
-          <td class="table1_tdelement"><span>なし(Gnit,OSCを御覧ください)</span></td>
-          <td class="table1_tdelement">
-            <a href="https://x.com/search?q=%23OSC" class="hashtag_autospace" target="_blank" rel="noopener">#OSC</a>
-            <a href="https://x.com/search?q=%23Gnit" class="hashtag_autospace" target="_blank" rel="noopener">#Gnit</a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <noscript><p>JavaScriptをオンにしてください</p></noscript>
   </body>
+  <script>
+    // 画面幅が768ピクセル以下の場合はスマホとみなす
+    // AIに任せたから意味が分からん
+    function g(n){
+      return document.getElementById(n)
+    }
+    if (window.matchMedia('(max-width: 768px)').matches) {// スマホ表示用の処理
+      location.replace("phone.html")
+    } else {// PC表示用の処理
+      location.replace("pc.html")
+    }
+
+  </script>
 </html>

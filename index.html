@@ -5,6 +5,23 @@
   </head>
   <body>
     開発中です。<br />
-    公開予定日は2026/07/15です
+    公開予定日は2026/07/15です<br />
+    <br>
+    <p>現在の機能(Dev.)</p>
+    <a href="links/all/" id="a1">Contest Links</a>
   </body>
+  <script>
+    // 画面幅が768ピクセル以下の場合はスマホとみなす
+    // AIに任せたから意味が分からん
+    function g(n){
+      return document.getElementById(n)
+    }
+    const a1=g('a1')
+    if (window.matchMedia('(max-width: 768px)').matches) {// スマホ表示用の処理
+      a1.href+="phone.html"
+    } else {// PC表示用の処理
+      
+    }
+
+  </script>
 </html>
